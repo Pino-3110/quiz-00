@@ -2,13 +2,13 @@
 
 Edit this file to solve problem 00. Problem 00 will not be auto-graded.
 
-This question is most aligned to our first class, where we discussed motivations for this course along with the benefits and risks that modern AI methods are bringing to society.
+This question is most closely aligned with our first class, where we discussed motivations for this course along with the benefits and risks that modern AI methods are bringing to society.
 
 ## Problem 00 - Part A
 
-Modern AI techniques stand to bring great benefits to society, but these benefits come with risks of causing harm to individuals, organizations, and societies. This is particularly true for deep learning algorithms, which are composed of several layers of linear and nonlinear processing. This makes deep learning algorithms exceptionally capable for detecting subtle patterns in data and making inferences therefrom, often achieving human-like or even super-human performance. However, the deep layers of linear and nonlinear processing which comprise deep learned algorithms also make it hard for those deploying them to ensure they behave as expected. Deep learning algorithms might learn the right results for the wrong reason, might appear to perform well initially and then degrade in performance when the input data drifts, and might have unintended biases towards producing particular results.
+Modern AI techniques stand to bring great benefits to society, but these benefits come with risks of causing harm to individuals, organizations, and societies. This is particularly true for deep learning algorithms, which are composed of several layers of linear and nonlinear processing. This makes deep learning algorithms exceptionally capable of detecting subtle patterns in data and making inferences from them, often achieving human-like or even superhuman performance. However, the deep layers of linear and nonlinear processing that make up deep learning algorithms also make it hard for those deploying them to ensure they behave as expected. Deep learning algorithms might learn the right results for the wrong reason, might appear to perform well initially and then degrade in performance when the input data drifts, and might have unintended biases towards producing particular results.
 
-List five examples in recent years (2010 onward) where AI capabilities have causes harm to people, organizations, or society:
+List five examples from 2010 onward where AI capabilities have caused harm to people, organizations, or society. For each example, identify what happened and who was harmed:
 
 * Example 1: [your text here - 1 point]
 * Example 2: [your text here - 1 point]
@@ -26,7 +26,7 @@ For one of the examples you chose, describe a best practice we have discussed so
 
 While the risks associated with AI are exacerbated by the prevalence of powerful deep architectures which started to gain popularity in the 2010s for image processing and in the 2020s for natural language processing, the risks of AI are not specific to deep neural networks. There are many other capabilities that would be considered AI by the Russell and Norvig definition that are not neural networks, and have been in use long before neural networks became popular.
 
-List a time where an AI capability caused harm to an individual, organization, or society **before the year 2000**.
+Describe an example where an AI capability caused harm to an individual, organization, or society **before the year 2000**.
 
 [your text here - 1 point]
 

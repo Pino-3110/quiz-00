@@ -3,10 +3,10 @@
 Read through the program and read all comments very carefully! Only uncomment
 the code below choices. There is no need to change any other code.
 
-Uncomment the selected line to make the unit tests pass. Each question only
-has one correct answer. Do not uncomment multiple lines. Each function is
-a discrete part of the problem. Problem parts do not depend on each other.
-If you get stuck, move on and come back. This question will be auto-graded.
+Uncomment all code lines in exactly one choice per part. Each part has one
+correct choice. Leave the other choices commented out. Problem parts do not
+depend on each other. If you get stuck, move on and come back. This question
+will be auto-graded.
 
 **TIP**: To uncomment multiple lines in VS Code, highlight them and use
 `Ctrl` + `/`.
@@ -58,14 +58,19 @@ class ToyNeuralNetwork:
 
         return y_output
 
-    def _activation_function(self, x: NDArray[np.float64]) -> NDArray[np.float64]:
+    def _activation_function(
+        self, x: NDArray[np.float64]
+    ) -> NDArray[np.float64]:
         """Defines the activation function."""
 
         # Problem 03 - Part A (5 points)
         #
         # Select the activation function that will make the neural network
-        # solve the problem by uncommenting the line(s) for your selection.
-        # Use the plot in ./nn_output.jpg to visualize the
+        # solve XOR: f(0, 0) = f(1, 1) = 0 and f(0, 1) = f(1, 0) = 1.
+        # Uncomment all code lines for your selection. Run this module to
+        # visualize the network output in ./nn_output.jpg.
+
+        y = np.zeros_like(x)  # Placeholder until you select a choice below.
 
         # Choice A
         # y = x
@@ -79,7 +84,7 @@ class ToyNeuralNetwork:
         # Choice D
         # print(x.shape)
         # y = np.apply_along_axis(
-        #    np.convolve, axis=0, arr=x, v=np.ones(10), mode="same"
+        #     np.convolve, axis=0, arr=x, v=np.ones(10), mode="same"
         # )
 
         return y
@@ -91,7 +96,7 @@ class ChildToyNeuralNet(ToyNeuralNetwork):
     # Problem 03 - Part B (5 points)
     #
     # Select the __init__ definition that will perform all the initialization
-    # instructions from the parent function and set the weights_hidden
+    # instructions from the parent class's __init__ and set weights_hidden
     # variable to all ones.
 
     # Choice A:
@@ -103,7 +108,9 @@ class ChildToyNeuralNet(ToyNeuralNetwork):
     # def __init__(self):
     #     self.weights_hidden = np.array([[1, 1], [1, 1]])
 
-    def _activation_function(self, x: NDArray[np.float64]) -> NDArray[np.float64]:
+    def _activation_function(
+        self, x: NDArray[np.float64]
+    ) -> NDArray[np.float64]:
         """Defines the activation function."""
         return 1 / (1 + np.exp(-x))
 
@@ -139,7 +146,9 @@ if __name__ == "__main__":
     x_features, y_labels, _ = generate_xor_dataset(2, sigma=0.0)
 
     # View this plot in ./dataset.jpg to see the example data we have
-    scatter_plot_dataset(x_features, y_labels, x_plot_dimension=0, y_plot_dimension=1)
+    scatter_plot_dataset(
+        x_features, y_labels, x_plot_dimension=0, y_plot_dimension=1
+    )
 
     # Here we instantiate a neural network from our class
     nn = ToyNeuralNetwork()

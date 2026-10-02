@@ -1,7 +1,7 @@
 """problem_02.py - linear and nonlinear functions (10 points / 40 points)
 
-Uncomment the selected line to make the unit tests pass. Each question only
-has one correct answer. Do not uncomment multiple lines. Each function is
+Uncomment all code lines in exactly one choice per part. Each part has one
+correct choice. Leave the other choices commented out. Each function is
 a discrete part of the problem. Problem parts do not depend on each other.
 If you get stuck, move on and come back. This question will be auto-graded.
 
@@ -16,29 +16,30 @@ Functions:
 import numpy as np
 
 
-def problem_02_part_a() -> np.ndarray:
+def problem_02_part_a() -> float:
     """Problem 02 - Part A (5 points).
 
-    Uncomment the line(s) which computes a **linear** function of x.
+    Uncomment the line that computes a **linear** function of x.
+    Treat the weights w as fixed coefficients when considering linearity.
 
     Returns:
         The linear function applied to x.
     """
     np.random.seed(42)
     x: np.ndarray = np.arange(0, 10)
-    fx: np.ndarray = np.zeros(x.shape)
+    w: np.ndarray = np.random.random(x.shape)
+    fx: float = 0.0
 
     # Choice A:
-    # w: np.ndarray = np.random.random(x.shape)
     # fx = np.sum(w * x)
 
     # Choice B:
     # fx = x**2
 
     # Choice C:
-    # fx = np.sin(w*x)
+    # fx = np.sin(w * x)
 
-    print(f"Problem 02-A answer: x = {x}, f(x) = {fx}")
+    print(f"Problem 02-A answer: x = {x}, w = {w}, f(x) = {fx}")
 
     return fx
 
@@ -49,23 +50,25 @@ def compute_rectified_linear_unit(x: np.ndarray) -> np.ndarray:
 
 
 def problem_02_part_b() -> np.ndarray:
-    """Problem 02 - Part A (5 points).
+    """Problem 02 - Part B (5 points).
 
-    Uncomment the line(s) which computes a **nonlinear** function of x.
+    Uncomment the lines that compute a **nonlinear** function of x.
+    Treat any weights w as fixed coefficients when considering linearity.
 
     Pay attention to the details!
 
     Returns:
-        The linear function applied to x.
+        The nonlinear function applied to x.
     """
     x: np.ndarray = np.arange(-5, 5)
     fx: np.ndarray = np.zeros(x.shape)
 
     # Choice A:
     # w: np.ndarray = np.random.random(x.shape)
-    # fx = np.trapz(w * x)
+    # fx = np.trapezoid(w * x)
 
     # Choice B:
+    # w: np.ndarray = np.random.random(x.shape)
     # fx = np.dot(w, x)
 
     # Choice C:

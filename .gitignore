@@ -52,6 +52,7 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
+.ruff_cache/
 cover/
 
 # Translations
@@ -123,6 +124,10 @@ celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
+
+# Generated quiz plots
+/dataset.jpg
+/nn_output.jpg
 
 # Environments
 .env

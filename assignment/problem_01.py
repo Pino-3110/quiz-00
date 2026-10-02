@@ -1,7 +1,7 @@
 """problem_01.py - mathematical fundamentals (10 points / 40 points)
 
-Uncomment the selected line to make the unit tests pass. Each question only
-has one correct answer. Do not uncomment multiple lines. Each function is
+Uncomment all code lines in exactly one choice per part. Each part has one
+correct choice. Leave the other choices commented out. Each function is
 a discrete part of the problem. Problem parts do not depend on each other.
 If you get stuck, move on and come back. This question will be auto-graded.
 
@@ -43,7 +43,7 @@ def problem_01_part_a() -> float:
 
 
 def problem_01_part_b() -> float:
-    """Problem 01 - Part B (5 points)
+    """Problem 01 - Part B (5 points).
 
     Uncomment the lines which correctly take the dot product of the two
     vectors, x1 and x2.

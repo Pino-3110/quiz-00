@@ -14,16 +14,16 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.12'
+        python-version-file: .python-version
     - name: pytest
       id: pytest
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: pytest
-        setup-command: bash .devcontainer/configure_environment.sh
-        command: poetry run pytest
+        setup-command: python -m pip install uv && uv sync --locked
+        command: uv run --locked pytest
         timeout: 10
         max-score: 30
     - name: Autograding Reporter
